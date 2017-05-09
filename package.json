@@ -19,6 +19,7 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "jsdoc": "^3.4.3",
     "rc": "1.0.1",
     "sails": "~0.12.13",
     "sails-disk": "~0.10.9",
@@ -26,7 +27,8 @@
   },
   "scripts": {
     "debug": "node debug app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
   },
   "main": "app.js",
   "repository": {
@@ -34,5 +36,8 @@
     "url": "git://github.com/Hussain/OpenBook.git"
   },
   "author": "Hussain",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "minami": "^1.2.3"
+  }
 }
