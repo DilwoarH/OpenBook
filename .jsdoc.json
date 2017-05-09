@@ -1,10 +1,10 @@
 { 
     "tags": {
         "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
+        "dictionaries": ["jsdoc","closure"]
     },
     "source": {
-        "include": ["api", "package.json", "README.md"],
+        "include": ["./api/", "package.json", "README.md"],
         "includePattern": ".js$",
         "excludePattern": "(node_modules/|docs)"
     },
